@@ -3,3 +3,9 @@ body {
     background: rgba(255, 196, 0, 0.308);
     text-align: center
 }
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
