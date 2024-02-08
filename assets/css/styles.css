@@ -3,15 +3,6 @@
     src: url(moderne-sans-font.ttf);
 }
 
-.background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    -webkit-filter: blur(5px);
-    filter: blur(5x);
-}
-
 @media (min-aspect-ratio: 16/9) {
     .background {
         width: 100%;
@@ -26,11 +17,77 @@
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
+}
+
+.background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* -webkit-filter: blur(100px);
+    filter: blur(100x); */
+}
+
 .content {
     background-color: white;
     text-align: center;
+    position: relative;
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .project {
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.content h1 {
+    color: #000;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: moderne-sans;
+    margin-bottom: 1%;
+}
+
+.content p {
+    text-align: inline-block;
+    color: #000;
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+    font-size: 25px;
+}
+
+.content .project ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.content .project ul li {
+    letter-spacing: 1px;
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.hero {
     width: 100;
     height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -38,22 +95,15 @@
     justify-content: center;
 }
 
-.content .project {
-    
-}
-
-.content h1 {
-    color: #000;
-    letter-spacing: 10px;
-    font-size: 25px;
-    font-weight: lighter;
-    font-family: moderne-sans;
-}
-
-.content p {
-    text-align: inline-block;
-    color: #000;
-    letter-spacing: 1px;
+.hero2 {
+    width: 100;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -78,43 +128,6 @@
     margin-bottom: 20px;
 }
 
-.hero {
-    width: 100;
-    height: 100vh;
-    background-color: black;
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav .logo {
-    width: 50px;
-    height: 50px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
-}
-    
-p {
-    letter-spacing: 1px;
-}
-
-p ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-}
-
-p ul li {
-    letter-spacing: 1px;
-}
-
 nav {
     width: 100%;
     position: absolute;
@@ -124,16 +137,33 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: purple;
+    flex-direction: column;
+}
+
+nav .logo {
+    width: 60px;
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    padding-top: 10px;
 }
 
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 17px;
+    font-size: 25px;
+    font-family: moderne-sans;
+}
+    
+p {
+    letter-spacing: 1px;
 }
