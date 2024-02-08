@@ -1,13 +1,40 @@
+/*
+FONTS
+*/
+
+@font-face {
+    font-family: moderne-sans;
+    src: url(moderne-sans-font.ttf);
+}
+
 body {
     margin: 0;
     background: rgba(255, 196, 0, 0.308);
-    text-align: center
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    text-align: center;
+    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
+}
+
+h1 {
+    letter-spacing: 20px;
+    font-size: 75px;
+    font-weight: lighter;
+    font-family: moderne-sans;
+}
+
+p {
+    letter-spacing: 1px;
 }
 
 ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
+}
+
+ul li {
+    letter-spacing: 1px;
 }
 
 nav {
