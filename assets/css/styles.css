@@ -1,43 +1,139 @@
-/*
-FONTS
-*/
-
 @font-face {
     font-family: moderne-sans;
     src: url(moderne-sans-font.ttf);
 }
 
-body {
-    margin: 0;
-    background: rgba(255, 196, 0, 0.308);
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    text-align: center;
-    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
+.background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: blur(5px);
+    filter: blur(5x);
 }
 
-h1 {
-    letter-spacing: 20px;
-    font-size: 75px;
+@media (min-aspect-ratio: 16/9) {
+    .background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.content {
+    background-color: white;
+    text-align: center;
+    width: 100;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .project {
+    
+}
+
+.content h1 {
+    color: #000;
+    letter-spacing: 10px;
+    font-size: 25px;
     font-weight: lighter;
     font-family: moderne-sans;
 }
 
+.content p {
+    text-align: inline-block;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #fff;
+    letter-spacing: 40px;
+    font-size: 160px;
+    font-weight: lighter;
+    font-family: moderne-sans;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title p {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    width: 100;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo {
+    width: 50px;
+    height: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
+}
+    
 p {
     letter-spacing: 1px;
 }
 
-ul {
+p ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
 }
 
-ul li {
+p ul li {
     letter-spacing: 1px;
 }
 
 nav {
-    list-style-type: none;
-    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
 }
