@@ -208,23 +208,23 @@ p * {
 }
 
 .project h1 {
-    font-size: 3vw;
+    font-size: 2vw;
     text-transform: uppercase;
 
 }
 
 .project p {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .project ul {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -232,7 +232,8 @@ p * {
     letter-spacing: 1px;
     list-style: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 0.7em;
+    padding: 5px 15px;
 }
 
 .subtitle {
