@@ -245,6 +245,9 @@ p * {
     color: black;
     margin: 0 5px;
     font-weight: bold;
+    padding: 10px 20px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .subtitle {
