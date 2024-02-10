@@ -213,6 +213,12 @@ p * {
 
 }
 
+.project .logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 15px;
+}
+
 .project p {
     font-size: 1.2em;
 }
@@ -234,6 +240,11 @@ p * {
     display: inline-block;
     font-size: 0.7em;
     padding: 5px 15px;
+    background-color: gold;
+    border-color: gray;
+    color: black;
+    margin: 0 5px;
+    font-weight: bold;
 }
 
 .subtitle {
