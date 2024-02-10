@@ -208,23 +208,29 @@ p * {
 }
 
 .project h1 {
-    font-size: 3vw;
+    font-size: 2vw;
     text-transform: uppercase;
 
 }
 
+.project .logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 15px;
+}
+
 .project p {
-    font-size: 2vw;
+    font-size: 1.2em;
 }
 
 .project ul {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -232,7 +238,13 @@ p * {
     letter-spacing: 1px;
     list-style: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 0.7em;
+    padding: 5px 15px;
+    background-color: gold;
+    border-color: gray;
+    color: black;
+    margin: 0 5px;
+    font-weight: bold;
 }
 
 .subtitle {
