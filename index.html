@@ -9,26 +9,170 @@
 </head>
 <html>
     <body>
-        <div class="hero2">
 
-            <div class="nav">
-                <img src="assets/images/logo-1.png" class="logo">
-                <a href="/index.html">Home</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/contact.html">Contact</a>
-            </div>
-            <div class="container container-home">
-                <div class="container-title" id="home-title">
-                    <p class="title">
-                        Hello World!
-                    </p>
-                    <br>
-                    <p class="subtitle">
-                        I am making a website for fun. <br>
-                        Will probably become my portfolio but who knows what else it can be for!
-                    </p>
-                </div>
+        <div class="nav">
+            <img src="assets/images/logo-1.png" class="logo">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="container container-home" id="home">
+            <div class="container-title" id="home-title">
+                <p class="title">
+                    Hello World!
+                </p>
+                <br>
+                <p class="subtitle">
+                    I am making a website for fun. <br>
+                    Will probably become my portfolio but who knows what else it can be for!
+                </p>
             </div>
         </div>
+
+        <div class="container container-home" id="projects">
+            <video autoplay loop muted plays-inline class="background">
+                <source src="assets/videos/background-1.mp4" type="video/mp4">
+            </video>
+
+            <div class="container-title" id="projects-title">
+                <p class="title">
+                    Projects
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="project">
+                <h1>Net Value: Visualizing the Evolution of Soccer Playstyles</h1>
+                <p>
+                    Net Value is a visualization tool for understanding the evolution of soccer play styles. The
+                    tool is meant to allow sports analysts to track the progression of player performance over multiple seasons. 
+                    To achieve this, Net Value separates soccer players into various clusters. These clusters serve as 
+                    profiles that encapsulate player perfomance and play style. The clustering model is trained on players across 
+                    95 professional leagues over 15 seasons. 
+                </p>
+                <br>
+                <p>
+                    I worked on this project as part of my graduate studies, collaborating with 4 other colleagues. I experienced the entire data 
+                    development process, from collection and processing data to synthesizing and presenting our results. We used Pandas to handle 
+                    missing values and outliers, and to standardize metrics for fair player comparison. We leveraged PCA and k-Means for the 
+                    clustering model, and t-SNE to project our dataset in 2D. The dashboard was built using Plotly Dash in order to create simple
+                    but useful visualizations run on Python. The site is hosted on PythonAnywhere. 
+                </p>
+                <br>
+                <p>
+                    List of tools used:
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <!-- <img src="assets/images/python-logo.png" class="logo"> <br> -->
+                        Python
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/flask.png" class="logo"> <br> -->
+                        Flask
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/jupyter-logo.png" class="logo"> <br> -->
+                        Jupyter
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/json-logo.png" class="logo"> <br> -->
+                        JSON
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/requests-logo.png" class="logo"> <br> -->
+                        Requests
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/pandas-logo.png" class="logo"> <br> -->
+                        Pandas
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/plotlydash-logo.png" class="logo"> <br> -->
+                        Plotly Dash
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h1>Data Visualization for Droughts in the Colorado River</h1>
+                <p>
+                    Visualized historical drought levels in the Colorado River Basin and its effects on water supplies and local wildfires.
+                    Built interactive map visualization on Tableau using drought and wildfire geospatial data with over 200k data points.
+                    Graphed historical trends in drought across states and counties that depend on Colorado River water supplies.
+                    Created ”scrolly-telling” presentation that revealed insights regarding the impact of drought in the local area.
+                </p>
+                <br>
+                <p>
+                    List of tools used:
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <!-- <img src="assets/images/tableau-logo.png" class="logo"> <br> -->
+                        Tableau
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/excel-logo.png" class="logo"> <br>s -->
+                        Excel
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h1>Senior Design</h1>
+                <p>
+                    Performed in-depth study of Tindall's inventory policy to maximized lot efficiency and reduce associated costs.
+                    Modeled the company's stacking process using Simio simulation software to test various inventory policies.
+                    Recommended more cost-efficient inventory policy that reduced inventory relocation costs by estimated 45%.
+                    Documented approach and presented findings to client stakeholders and college faculty and students.
+                </p>
+                <br>
+                <p>
+                    List of tools used:
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <!-- <img src="assets/images/simio-logo.png" class="logo"> <br> -->
+                        Simio
+                    </li>
+                    <li>
+                        <!-- <img src="assets/images/minitab-logo.png" class="logo"> <br> -->
+                        Minitab
+                    </li>
+                    <!-- <li>
+                        <img src="assets/images/logo-1.png" class="logo"> <br>
+                        ExpertFit
+                    </li> -->
+                    <li>
+                        <!-- <img src="assets/images/excel-logo.png" class="logo"> <br> -->
+                        Excel
+                    </li>
+                    <!-- <li>
+                        <img src="assets/images/logo-1.png" class="logo"> <br>
+                        Powerpoint
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container container-home" id="contact">
+            <div class="container-title" id="contact-title">
+                <p class="title">
+                    Get in touch
+                </p>
+                <br>
+                <p class="subtitle">
+                    Email: alberto.j.debes@gmail.com
+                </p>
+            </div>
+        </div>
+        
     </body>
 </html>
