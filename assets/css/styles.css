@@ -61,9 +61,9 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    color: white;
+    color: black;
     font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 .background {
@@ -88,9 +88,22 @@ body {
     display:inline-block;
 }
 
+#contact {
+    background-color: black;
+}
+
+#contact-title {
+    color: white;
+}
+
 .container-title {
     max-width: 80%;
     max-height: 40vh;
+}
+
+.container-title span {
+    color: purple;
+    letter-spacing: inherit;
 }
 
 .content {
@@ -194,6 +207,10 @@ p * {
     letter-spacing: 1px;
 }
 
+#projects-title {
+    color: black;
+}
+
 .project {
     margin: 4vh 13vw;
     border: 2px solid black;
@@ -249,7 +266,7 @@ p * {
     font-size: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: inherit;
 }
 
 .title {
@@ -260,5 +277,5 @@ p * {
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #fff;
+    color: inherit;
 }
