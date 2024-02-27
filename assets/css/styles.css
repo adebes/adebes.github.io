@@ -57,18 +57,24 @@
     }
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    color: black;
-    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
-    background-color: white;
+    color: white;
+    font-family: moderne-sans, "sohne-var", "Helvetica Neue", "Arial", sans-serif;
+    background-color: #080038;
 }
 
 .background {
     position: absolute;
     z-index: -1;
+    max-width: 100%;
     -webkit-filter: opacity(0.3);
     filter: opacity(0.3);
 }
@@ -79,7 +85,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-size: 2em;
     text-align: center;
   }
@@ -88,13 +94,13 @@ body {
     display:inline-block;
 }
 
-#contact {
-    background-color: black;
+/* #contact {
+    background-color: inherit;
 }
 
 #contact-title {
-    color: white;
-}
+    color: inherit;
+} */
 
 .container-title {
     max-width: 80%;
@@ -107,52 +113,65 @@ body {
 }
 
 .content {
-    background-color: white;
     text-align: center;
     margin: 2% 0;
     display: flex;
     flex-direction: column;
+}
+
+.heading {
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    line-height: normal;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
 }
 
-.content h1 {
-    color: #000;
-    letter-spacing: 10px;
-    font-size: 50px;
-    font-weight: lighter;
-    font-family: moderne-sans;
-    margin-bottom: 1%;
+.heading #line-1 {
+    font-size: 3rem;
+    margin-bottom: 7.5px;
+    letter-spacing: 0.5em;
 }
 
-.content p {
-    text-align: inline-block;
-    color: #000;
-    letter-spacing: 1px;
-    margin-bottom: 2% 0;
-    font-size: 25px;
+.heading #line-2 {
+    font-size: 2rem;
+    margin-top: 7.5px;
+}
+
+.heading__line span {
+    color: #8458FF;
+    font-weight: 400;
+}
+
+.heading__cta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 0.5rem 3rem;
+    width: auto;
+    border: 3px solid #8458FF;
+    border-radius: 10px;
+    color: #8458FF;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    animation: moveInBottom 0.7s 1.2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
 .hero {
-    width: auto;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
-    /* position: relative;
-    padding: 0 5%; */
+    position: relative;
     display: flex;
-    flex-direction: column;
-}
-
-.hero2 {
-    width: 100vw;
     height: 100vh;
-    background-color: black;
-    /* position: relative; */
-    /* padding: 0 5%; */
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
+    width: 100%;
 }
 
 .nav {
@@ -162,26 +181,32 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     text-decoration: none !important;
     outline: none !important;
     color: white !important;
-    background-color: purple;
+    justify-content: space-between;
+    background-color: black;
     position: sticky;
     top: 0;
+    z-index: 1;
+}
+
+.nav .links {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .nav a {
-    display: flex;
-    align-items: center;
     text-decoration: none !important;
     outline: none !important;
     color: white;
     transition: all 0.3s ease;
     padding: 10px 15px;
+    margin: 0px 15px;
     text-transform: uppercase;
-    font-weight: 500;
-    font-family: moderne-sans;
 }
 
 .nav .logo {
@@ -189,18 +214,10 @@ body {
     height: 45px;
     margin: 0 15px;
 }
-
-nav a.active-link {
-    color: yellow !important;
-}
-
-.nav a.active-link:hover {
-    color: black !important;
-  }
   
 .nav a:hover {
-    color: black;
-    background-color: yellow;
+    color: white;
+    background-color: #8458FF;
 }
     
 p * {
@@ -208,12 +225,12 @@ p * {
 }
 
 #projects-title {
-    color: black;
+    color: inherit;
 }
 
 .project {
     margin: 4vh 13vw;
-    border: 2px solid black;
+    border: 2px solid;
     padding: 3vh 7vw;
     border-radius: 50px;
 }
@@ -221,6 +238,9 @@ p * {
 .project h1 {
     font-size: 2vw;
     text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: lighter;
+    margin-bottom: 1%;
 
 }
 
@@ -232,10 +252,10 @@ p * {
 
 .project p {
     font-size: 1.2em;
+    letter-spacing: 1px;
 }
 
 .project ul {
-    /* display: inline-block; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -250,14 +270,9 @@ p * {
     list-style: none;
     display: inline-block;
     font-size: 0.7em;
-    padding: 5px 15px;
-    background-color: gold;
-    border-color: gray;
-    color: black;
+    background-color: #8458FF;
     margin: 0 5px;
-    font-weight: bold;
-    padding: 10px 20px;
-    font-weight: 800;
+    padding: 1% 2%;
     text-transform: uppercase;
 }
 
@@ -272,7 +287,7 @@ p * {
 .title {
     display: inline-block;
     letter-spacing: 0.5em;
-    font-size: 3em;
+    font-size: 1.4em;
     font-family: moderne-sans;
     margin-top: 20px;
     margin-bottom: 20px;
