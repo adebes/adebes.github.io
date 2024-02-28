@@ -184,11 +184,12 @@ body {
     text-decoration: none !important;
     outline: none !important;
     color: white !important;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 0 10%;
 }
 
 .nav .links {
@@ -196,7 +197,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .nav a {
@@ -205,7 +206,7 @@ body {
     color: white;
     transition: all 0.3s ease;
     padding: 10px 15px;
-    margin: 0px 15px;
+    margin: 0 10%;
     text-transform: uppercase;
 }
 
